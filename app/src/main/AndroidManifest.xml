@@ -16,7 +16,7 @@
         android:theme="@style/Theme.YouTubeApi44"
         tools:targetApi="31">
         <activity
-            android:name=".PlaylistActivity"
+            android:name=".ui.playlist_details.PlaylistDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".ui.playlist.PlaylistActivity"
