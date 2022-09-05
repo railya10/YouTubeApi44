@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YouTubeApi44</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="playlist">Playlist</string>
+    <string name="title_example">Emotional Well-being Healing Practices for Children</string>
+    <string name="playlist_extra_info_example">32 video series</string>
+    <string name="screenshot">Screenshot</string>
+</resources>
