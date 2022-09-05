@@ -11,11 +11,14 @@ import com.example.youtubeapi44.model.Item
 import com.example.youtubeapi44.ui.playlist_details.PlaylistDetailsActivity
 
 
+
 class PlaylistActivity : BaseActivity<PlaylistViewModel, ActivityPlaylistBinding>() {
 
     companion object {
         const val KEY = "key"
     }
+
+
 
     override val viewModel: PlaylistViewModel by lazy {
         ViewModelProvider(this)[PlaylistViewModel::class.java]
