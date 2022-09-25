@@ -1,23 +1,19 @@
 package com.example.youtubeapi44.ui.playlist
 
-
 import android.content.Intent
 import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import com.example.youtubeapi44.base.BaseActivity
+import com.example.youtubeapi44.core.ui.BaseActivity
 import com.example.youtubeapi44.databinding.ActivityPlaylistBinding
-import com.example.youtubeapi44.model.Item
+import com.example.youtubeapi44.data.remote.model.Item
 import com.example.youtubeapi44.ui.playlist_details.PlaylistDetailsActivity
-
-
 
 class PlaylistActivity : BaseActivity<PlaylistViewModel, ActivityPlaylistBinding>() {
 
     companion object {
         const val KEY = "key"
     }
-
 
 
     override val viewModel: PlaylistViewModel by lazy {
@@ -42,8 +38,10 @@ class PlaylistActivity : BaseActivity<PlaylistViewModel, ActivityPlaylistBinding
     }
 
     private fun onItemClick(channelId: String){
-        val intent = Intent(this, PlaylistDetailsActivity::class.java)
-        intent.putExtra(KEY,channelId)
-        startActivity(intent)
+        Intent(this, PlaylistDetailsActivity::class.java).apply {
+            putExtra(KEY,channelId)
+            startActivity(this)
+        }
+
     }
 }

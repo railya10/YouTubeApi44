@@ -1,6 +1,7 @@
-package com.example.youtubeapi44.remote
+package com.example.youtubeapi44.core.network
 
 import com.example.youtubeapi44.BuildConfig
+import com.example.youtubeapi44.data.remote.ApiService
 import java.util.concurrent.TimeUnit
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

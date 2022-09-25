@@ -1,10 +1,10 @@
-package com.example.youtubeapi44.base
+package com.example.youtubeapi44.core.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewbinding.BuildConfig
 import androidx.viewbinding.ViewBinding
+
 
 abstract class BaseActivity<VM: BaseViewModel,VB: ViewBinding> : AppCompatActivity() {
 
